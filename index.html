@@ -100,12 +100,19 @@
         nav .logo {
             font-size: 1.5rem;
             font-weight: bold;
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
             display: flex;
             align-items: center;
             gap: 0.5rem;
+        }
+
+        nav .logo .logo-text {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        nav .logo .logo-icon {
+            font-size: 1.5rem;
         }
 
         nav ul {
@@ -508,7 +515,8 @@
     <nav>
         <div class="container">
             <div class="logo">
-                💌 WhisperWeb
+                <span class="logo-icon">💌</span>
+                <span class="logo-text">WhisperWeb</span>
             </div>
             <ul>
                 <li><a href="#features">Features</a></li>
